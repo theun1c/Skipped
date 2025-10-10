@@ -10,20 +10,20 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(today.toString());
     calendar.onDateClick(function(event, date) {
 
-        if (event.target.style.backgroundColor == 'rgb(255, 69, 0)') {
-            event.target.style.backgroundColor = "rgb(255, 215, 0)";
+        if (event.target.style.backgroundColor == 'rgb(255, 36, 0)') {
+            event.target.style.backgroundColor = "rgb(255, 165, 0)";
             event.target.style.color = 'black';
-        } else if (event.target.style.backgroundColor == "rgb(255, 215, 0)") {
-            event.target.style.backgroundColor = 'lightgreen';
+        } else if (event.target.style.backgroundColor == "rgb(255, 165, 0)") {
+            event.target.style.backgroundColor = 'rgb(76, 187, 23)';
             event.target.style.color = 'black';
-        } else if (event.target.style.backgroundColor == 'lightgreen' && date.toString() != today.toString()) {
+        } else if (event.target.style.backgroundColor == 'rgb(76, 187, 23)' && date.toString() != today.toString()) {
             event.target.style.backgroundColor = 'white';
             event.target.style.color = 'black';
-        } else if (event.target.style.backgroundColor == 'lightgreen' && date.toString() == today.toString()) {
+        } else if (event.target.style.backgroundColor == 'rgb(76, 187, 23)' && date.toString() == today.toString()) {
             event.target.style.backgroundColor = '#52c9ff';
             event.target.style.color = 'white';
         } else {
-            event.target.style.backgroundColor = 'rgb(255, 69, 0)';
+            event.target.style.backgroundColor = 'rgb(255, 36, 0)';
             event.target.style.color = 'black';
         }
         console.log(date.toString());
